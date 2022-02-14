@@ -1,0 +1,13 @@
+- name: Condifigure environment
+  hosts: localhost
+  gather_facts: yes
+  become: yes 
+
+  tasks:
+  - name: Become docker host
+    import_role:
+      name: docker
+
+  - name: Become tmux
+    import_role:
+      name: tmux
