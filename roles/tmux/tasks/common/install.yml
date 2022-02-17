@@ -2,7 +2,5 @@
 - name: Install tmux software package
   become: true
   package:
-    name: "{{ service_package }}"
+    name: tmux 
     state: present
-  tags:
-  - install
