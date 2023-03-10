@@ -1,10 +1,7 @@
 - name: Condifigure environment
-  hosts: localhost
+  hosts: "{{ host | default('localhost')}}"
   gather_facts: yes
-  become: yes 
 
   roles:
-  - name: tmux
-  - name: docker
-  - name: vim
-  - name: zsh
+    - name: vim
+    - name: tmux

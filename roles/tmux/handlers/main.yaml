@@ -1,0 +1,3 @@
+---
+- name: Configure tmux source file
+  command: tmux source ~/.tmux.conf
